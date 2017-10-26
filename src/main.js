@@ -5,7 +5,7 @@ import App from './App.vue'
 Vue.use(VueResource);
 
 //vue-resource的全局配置
-Vue.http.options.root = 'https://vuejs-http-a3dd3.firebaseio.com/data.json';
+Vue.http.options.root = 'https://vuejs-http-a3dd3.firebaseio.com/';
 Vue.http.interceptors.push((request, next) => {
     console.log(request);
     if(request.method == 'POST'){
