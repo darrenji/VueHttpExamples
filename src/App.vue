@@ -39,7 +39,7 @@
             submit(){
                 //console.log(this.user);
                 
-                this.$http.post('https://vuejs-http-a3dd3.firebaseio.com/data.json', this.user)
+                this.$http.post('', this.user)
                     .then(response => {
                         console.log(response);
                     }, error => {
@@ -47,7 +47,7 @@
                 });
             },
             fetchData(){
-                this.$http.get('https://vuejs-http-a3dd3.firebaseio.com/data.json')
+                this.$http.get('')
                     .then(response => {
                         return response.json();
                     })
